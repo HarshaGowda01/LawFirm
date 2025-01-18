@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB | CHAMBERS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-dFDEsSHFbYwKGbt7iWZ5kqMOK5e4a6/u0v4A0KFL3PFrOWf5zF8Kvo0tu/Ruh3GpfmU8pp4ls0LNpGz1aT3DFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- DISCLAIMER -->
+
+    <div id="disclaimerPopup" class="overlay">
+        <div class="popup">
+            <h1 style="font-family: 'Times New Roman', Times, serif;">Disclaimer</h1>
+            <br>
+            <div class="para">
+
+                <p>As per the Bar Council Of India, AB Chambers is not permitted to solicit work or advertising in any
+                    manner to the general public. Therefore, it is constrained to provide any further information on
+                    this website.<br><br>
+
+                    By clicking on "I AGREE" below, the user acknowledges the following:<br><br>
+
+                    &#x2022; There has been no solicitation, advertisement, or any form of direct or persuasive
+                    interaction or
+                    inducement towards the user by AB Chambers or its members.<br><br>
+
+                    &#x2022; The user willfully wishes to gain more information about AB Chambers Office Bengaluru, its
+                    contact
+                    details, its area of expertise and practice, and its associates, for the user's own information and
+                    use.<br><br>
+
+                    &#x2022; The information is made available/provided to the user only on his/her specific request and
+                    any
+                    information obtained or material downloaded from this website is completely of the user's volition
+                    and any transmission, receipt or use of this site is not intended to, and will not, create any
+                    lawyer-client relationship.<br><br>
+
+                    The information provided on this website should not be interpreted as providing legal advice or
+                    opinion for any purpose. All information, content, and materials available on this website are for
+                    'general informational purposes only'. AB Chambers disclaims all liability for any outcome resulting
+                    from a user's reliance on any material or information made available or provided on this website. In
+                    any case, if the user has any legal concerns, they must always seek independent legal
+                    advice.<br><br>
+
+                </p>
+
+                <div class="btn">
+                    <button class="agree-button">I Agree</button>
+                    <button id="disagree-btn">Disagree</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <nav> <!-- NAVBAR FOR MOBILE-->
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a class="close" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30"
+                        width="30"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#000000"
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg></a></li>
+            <!-- <li><a href="#">LOgo</a></li> -->
+            <li><a class="item" href="index.html">Home</a></li>
+            <li><a class="item" href="gallery.html">Gallery</a></li>
+            <li><a class="item" href="about.html">Our Firm</a></li>
+            <li><a class="item" href="founder.html">Our Founder</a></li>
+            <li><a class="item" href="#vision">Mission & Vision</a></li>
+            <li><a class="item" href="our_people.html">Our Team</a></li>
+            <li><a class="item" href="practiceAreas.html">Practise Areas</a></li>
+            <li><a class="item" href="career.html">Careers</a></li>
+            <li><a class="item" href="contactus.html">Contact Us</a></li>
+            <li>
+                <div class="social">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" width="28"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#FBF9F1"
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" width="28"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#FBF9F1"
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" width="28"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#FBF9F1"
+                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                        </svg></a>
+                </div>
+            </li>
+        </ul><!-- END of NAVBAR FOR MOBILE-->
+
+
+        <ul><!-- NAVBAR FOR DESKTOP-->
+            <li class="ABC_LOGO"><img src="images/AB_LOGO.jpeg"></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="#">About Us</a>
+                <ul class="dropdown">
+                    <li><a href="about.html">Our Firm</a></li>
+                    <li><a href="founder.html">Our Founder</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="#vision">Mission & Vision</a></li>
+            <li class="hideOnMobile"><a href="our_people.html">Our Team</a></li>
+            <li class="hideOnMobile"><a href="practiceAreas.html">Practise Areas</a></li>
+            <li class="hideOnMobile"><a href="career.html">Careers</a></li>
+            <li class="hideOnMobile"><a href="contactus.html">Contact Us</a></li>
+            <li class="hideOnPc" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        width="21"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#000000"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg></a></li>
+        </ul>
+    </nav> <!-- END of NAVBAR FOR DESKTOP-->
+
+    <div class="container">
+        <header class="header">
+            <div class="content">
+                <div class="hometitle">
+                    <!-- First page -->
+                    <pre>
+                        <h1 class="heading" style="font-family: 'Times New Roman', Times, serif;">Welcome to <span  style="display: flex; flex-direction: row; ">AB <span style="border-left: 2px solid #fbf9f1; padding-left: 8px;  display: inline-block  ">CHAMBERS</span> </span></h1>
+                    </pre>
+                </div>
+                <span class="scroll">Scroll down</span>
+                <span class="down">
+                    <i id="btm_arrow" class="fa-solid fa-angles-down fa-bounce" style="color: #ffffff;"></i>
+                </span>
+        </header>
+
+        <!-- mission and vission -->
+        <div class="main-mission" id="vision">
+            <div class="mission">
+                <div class="title">
+                    <h1 style="font-family: 'Times New Roman', Times, serif;font-weight: lighter">Mission and Vision
+                    </h1>
+                </div>
+                <div class="services">
+                    <div class="card">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M64 48c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16h80V400c0-26.5 21.5-48 48-48s48 21.5 48 48v64h80c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H64zM0 64C0 28.7 28.7 0 64 0H320c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm88 40c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H104c-8.8 0-16-7.2-16-16V104zM232 88h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H232c-8.8 0-16-7.2-16-16V104c0-8.8 7.2-16 16-16zM88 232c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H104c-8.8 0-16-7.2-16-16V232zm144-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H232c-8.8 0-16-7.2-16-16V232c0-8.8 7.2-16 16-16z" />
+                            </svg>
+                        </div>
+                        <h2>Mission</h2>
+                        <p>To serve as steadfast guardians of justice, committed to upholding the highest standards of
+                            legal excellence, integrity, and compassion. Rooted in a profound respect for the rule of
+                            law, we aim to contribute to a fair and equitable society by fostering legal solutions that
+                            stand as pillars of righteousness. </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M448 256A192 192 0 1 0 64 256a192 192 0 1 0 384 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 80a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zM224 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                            </svg>
+                        </div>
+                        <h2>Vision</h2>
+                        <p>Our vision is to be a dynamic force in the legal realm, leading by example in delivering
+                            unparalleled legal services. We aspire to set new standards in legal excellence, leveraging
+                            cutting-edge technologies and fostering a culture of continuous learning. With a focus on
+                            inclusivity and social responsibility, we envision a future where our legal expertise
+                            positively transforms the lives of individuals and shapes a more just and equitable society.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div> <!-- END OF CONTAINER -->
+
+
+    <footer> <!-- FOOTER -->
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Address : AB CHAMBERS - No. 5, Jeevan Building, <br>Kumara Park East, Seshadripuram, <br>Bengaluru,
+                    Karnataka
+                    560001</p>
+                <p>Email : Contact@abchambers.com</p>
+                <p>Phone : +91 9620432717</p>
+            </div>
+
+
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href="mailto:Contact@abchambers.com"><i class="fa-regular fa-envelope"></i></a></li>
+                    <li><a href="tel:9620432717"><i class="fa-solid fa-phone"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            &copy; 2020 AB Chambers. All rights reserved.
+        </div>
+        <!-- <div class="disclaimer-btn">
+            <button onclick="showDisclaimerModal()">Disclaimer</button>
+        </div> -->
+
+    </footer>
+
+    <script src="script.js"></script> <!--JAVA SCRIPT LINK-->
+
+</body>
+
+</html>

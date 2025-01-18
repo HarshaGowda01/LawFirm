@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our People</title>
+    <link rel="stylesheet" href="our_people.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav> <!-- NAVBAR FOR MOBILE-->
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a class="close" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30"
+                        width="30"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#000000"
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg></a></li>
+            <!-- <li><a href="#">LOgo</a></li> -->
+            <li><a class="item" href="index.html">Home</a></li>
+            <li><a class="item" href="gallery.html">Gallery</a></li>
+            <li><a class="item" href="about.html">Our Firm</a></li>
+            <li><a class="item" href="founder.html">Our Founder</a></li>
+            <li><a class="item" href="index.html#vision">Mission & Vision</a></li>
+            <li><a class="item" href="our_people.html">Our Team</a></li>
+            <li><a class="item" href="practiceAreas.html">Practise Areas</a></li>
+            <li><a class="item" href="career.html">Careers</a></li>
+            <li><a class="item" href="contactus.html">Contact Us</a></li>
+            <li>
+                <div class="social">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" width="28"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#FBF9F1"
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" width="28"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#FBF9F1"
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" width="28"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#FBF9F1"
+                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                        </svg></a>
+                </div>
+            </li>
+        </ul><!-- END of NAVBAR FOR MOBILE-->
+
+
+        <ul><!-- NAVBAR FOR DESKTOP-->
+            <li class="ABC_LOGO"><img src="images/AB_LOGO.jpeg"></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="#">About Us</a>
+                <ul class="dropdown">
+                    <li><a href="about.html">Our Firm</a></li>
+                    <li><a href="founder.html">Our Founder</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="index.html#vision">Mission & Vision</a></li>
+            <li class="hideOnMobile"><a href="our_people.html">Our Team</a></li>
+            <li class="hideOnMobile"><a href="practiceAreas.html">Practise Areas</a></li>
+            <li class="hideOnMobile"> <a href="career.html"> Careers </a></li>
+            <li class="hideOnMobile"><a href="contactus.html">Contact Us</a></li>
+            <li class="hideOnPc" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        width="21"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#000000"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg></a></li>
+        </ul>
+    </nav> <!-- END of NAVBAR FOR DESKTOP-->
+
+
+    <section id="team">
+        <h1 style="font-family:'Times New Roman', Times, serif; font-weight: lighter;">Our Team</h1>
+        <div class="team-grid">
+
+            <div class="team-member">
+                <img src="images/profile photos/INDRA KUMAR Cheluvarangan.jpg" class="image" alt="Team Member 1">
+                <div class="personal">
+                    <h2 class="beforehover">Indra Kumar C</h2>
+                    <p class="beforehover">Senior Associate</p>
+                    <br>
+                    <br>
+                    <p style="text-align: start; padding-left: 10px;">Read More</p>
+                </div>
+
+                <div class="content">
+                    <div class="dis">
+                        <h2>Indra Kumar C</h2>
+                        <p>Senior Associate</p>
+
+                    </div>
+                    <div class="para">
+                        <h3>Academic qualification</h3><br>
+                        <h5>B.Sc ,LLB.( Bangalore University ),MBL(National Law School)</h5>
+                        <h3>Core focus areas</h3><br>
+                        <h5>Civil,&Criminal matters,Commercial Disputes,Service Matters,GST litigations & Land
+                            acquisition law, Arbitration.</h5><br>
+                        <div class="icon-container">
+                            <a href=""><i class=" fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:inderkumar.ao@gmail.com"><i class="fa-solid
+                                        fa-square-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="images/profile photos/Danush.jpg" class="image" alt="Team Member 1">
+                <div class="personal">
+                    <h2 class="beforehover">Dhanush M</h2>
+                    <p class="beforehover">Advocate</p>
+                    <br>
+                    <br>
+                    <p style="text-align: start; padding-left: 10px;">Read More</p>
+                </div>
+                <div class="content">
+                    <div class="dis">
+                        <h2>Dhanush M</h2>
+                        <p>Advocate</p>
+
+                    </div>
+                    <div class="para">
+                        <h3>Academic qualification</h3><br>
+                        <h5>CMR Law School, Bangalore</h5>
+                        <h3>Core focus areas</h3><br>
+                        <h5> Criminal Cases, Civil Cases, DRT Cases, Mining Cases, and Non-Litigation </h5><br>
+                        <div class="icon-container">
+                            <a href="https://www.linkedin.com/in/dhanush8884631998/"><i
+                                    class=" fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:dhanush@abchambers.com"><i class="fa-solid fa-square-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="images/profile photos/Vaishali.jpg" class="image" alt="Team Member 1">
+                <div class="personal">
+                    <h2 class="beforehover">Vishali Sri Laxmi</h2>
+                    <p class="beforehover">
+                        Senior Associate</p>
+                    <br>
+                    <br>
+                    <p style="text-align: start; padding-left: 10px;">Read More</p>
+                </div>
+                <div class="content">
+                    <div class="dis">
+                        <h2>Vishali Sri Laxmi</h2>
+                        <p>
+                            Senior Associate</p>
+
+                    </div>
+                    <div class="para">
+                        <h3>Academic qualification</h3><br>
+                        <h5>Bishop Cotton Women Christian Law College, Bangalore</h5>
+                        <h3>Core focus areas</h3><br>
+                        <h5>Provident Fund and other service matters, consumer law, debt recovery matters, property
+                            disputes, IPR, consumer law, criminal law and corporate matters.</h5><br>
+                        <div class="icon-container">
+                            <a href="https://www.linkedin.com/in/vishali-sri-99867p39812/"><i
+                                    class=" fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:vishali@abchambers.com"><i class="fa-solid fa-square-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="images/profile photos/Pavithra.jpg" class="image" alt="Team Member 1">
+                <div class="personal">
+                    <h2 class="beforehover">H.Pavithra</h2>
+                    <p class="beforehover">Senior Associate</p>
+                    <br>
+                    <br>
+                    <p style="text-align: start; padding-left: 10px;">Read More</p>
+                </div>
+                <div class="content">
+                    <div class="dis">
+                        <h2>H.Pavithra</h2>
+                        <p>Senior Associate</p>
+
+                    </div>
+                    <div class="para">
+                        <h3>Academic qualification</h3><br>
+                        <h5>B.com LLB, Sheshadripuram Law College, Karnataka State Law University </h5>
+                        <h3>Core focus areas</h3><br>
+                        <h5>Arbitration, Commercial disputes, Labour and Employment, Contracts, White Collar Crimes,
+                            Insolvency and Restructuring</h5><br>
+                        <div class="icon-container">
+                            <a href="https://www.linkedin.com/in/pavithra-h-795a4b83/"><i
+                                    class=" fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:pavithra@abchambers.com"><i class="fa-solid fa-square-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="images/profile photos/Siddarth.jpg" class="image" alt="Team Member 1">
+                <div class="personal">
+                    <h2 class="beforehover">Siddharth Kumar</h2>
+                    <p class="beforehover">Associate </p>
+                    <br>
+                    <br>
+                    <p style="text-align: start; padding-left: 10px;">Read More</p>
+                </div>
+                <div class="content">
+                    <div class="dis">
+                        <h2>Siddharth Kumar</h2>
+                        <p>Associate</p>
+
+                    </div>
+                    <div class="para">
+                        <h3>Academic qualification</h3><br>
+                        <h5>B.A, LLB, Ramaiah College of Law, Bangalore </h5>
+                        <h3>Core focus areas</h3><br>
+                        <h5>Arbitration | NCLT | Infrastructure & Construction Disputes | </h5><br>
+                        <div class="icon-container">
+                            <a
+                                href="https://www.linkedin.com/in/siddharth-kumar-27a4aa144/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                                <i class=" fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:siddharthkumar1144@gmail.com"><i
+                                    class="fa-solid fa-square-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="team-member">
+                <img src="images/profile photos/RACHANA PISE.jpeg" class="image" alt="Team Member 1">
+                <div class="personal">
+                    <h2 class="beforehover">Rachana P Pise</h2>
+                    <p class="beforehover">Senior Associate </p>
+                    <br>
+                    <br>
+                    <p style="text-align: start; padding-left: 10px;">Read More</p>
+                </div>
+                <div class="content">
+                    <div class="dis">
+                        <h2>Rachana P Pise</h2>
+                        <p>Senior Associate </p>
+
+                    </div>
+                    <div class="para">
+                        <h3>Academic qualification</h3><br>
+                        <h5>B.A. LLB, LLM (IP), Queen Mary University London</h5>
+                        <h3>Core focus areas</h3><br>
+                        <h5>Commercial Matters, Dispute Resolution, Consumer Matters, Arbitration, Procedural Laws -
+                            Civil & Criminal</h5><br>
+                        <div class="icon-container">
+                            <a href="https://www.linkedin.com/in/rachana-pise-168aa0138/"><i
+                                    class=" fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:rachana@abchambers.com"><i class="fa-solid
+                                        fa-square-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="team-member">
+                <img src="images/profile photos/dattu.jpeg" class="image" alt="NOT GIVEN PHOTO">
+                <div class="personal">
+                    <h2 class="beforehover">Dattu</h2>
+                    <p class="beforehover">Advocate </p>
+                    <br>
+                    <br>
+                    <p style="text-align: start; padding-left: 10px;">Read More</p>
+                </div>
+                <div class="content">
+                    <div class="dis">
+                        <h2>Dattu</h2>
+                        <p>Advocate </p>
+
+                    </div>
+                    <div class="para">
+                        <h3>Academic qualification</h3><br>
+                        <h5>B.Com, LL.B</h5>
+                        <h3>Core focus areas</h3><br>
+                        <h5>Procedure Law - Civil & Criminal</h5><br>
+                        <div class="icon-container">
+                            <a href=""></i></a>
+                            <a href="mailto:mahurdattu@gmail.com"><i class="fa-solid
+                                    fa-square-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="images/profile photos/pawan.jpeg" class="image" alt="Team Member 1">
+                <div class="personal">
+                    <h2 class="beforehover">Pawan Kumar</h2>
+                    <p class="beforehover">Associate</p>
+                    <br>
+                    <br>
+                    <p style="text-align: start; padding-left: 10px;">Read More</p>
+                </div>
+                <div class="content">
+                    <div class="dis">
+                        <h2>Pawan Kumar</h2>
+                        <p>Associate</p>
+
+                    </div>
+                    <div class="para">
+                        <h3>Academic qualification</h3><br>
+                        <h5>LLM(CCL), School of Law Christ University, Bangalore</h5>
+                        <h3>Core focus areas</h3><br>
+                        <h5>Commercial matters: Commercial, contract and corporate laws, Dispute Resolution, Consumer
+                            Resolution, Procedural Laws- Civil & Criminal</h5><br>
+                        <div class="icon-container">
+                            <a href="https://www.linkedin.com/in/pawan-kumar-87629p55138/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:pawan@abchambers.com"><i class="fa-solid fa-square-envelope"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="team-member">
+                <img src="images/profile photos/netra.jpeg" class="image" alt="Not given">
+                <div class="personal">
+                    <h2 class="beforehover">Netra Balikai</h2>
+                    <p class="beforehover">Associate</p>
+                    <br>
+                    <br>
+                    <p style="text-align: start; padding-left: 10px;">Read More</p>
+                </div>
+                <div class="content">
+                    <div class="dis">
+                        <h2>Netra Balikai</h2>
+                        <p>Associate</p>
+
+                    </div>
+                    <div class="para">
+                        <h3>Academic qualification</h3><br>
+                        <h5>B.A.LLB(spl), KUSSK Law College, Dharwad</h5>
+                        <h3>Core focus areas</h3><br>
+                        <h5>Civil, criminal and family matters</h5><br>
+                        <div class="icon-container">
+                            <a href="https://www.linkedin.com/in/netra-balikai-87134a2a9/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:netrabalikai1998@gmail.com"><i class="fa-solid
+                                        fa-square-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="team-member">
+                <img src="images/profile photos/Jagannatha Gowda.jpeg" class="image" alt="Team Member 1">
+                <div class="personal">
+                    <h2 class="beforehover">Jagannatha Gowda</h2>
+                    <p class="beforehover">Associate</p>
+                    <br>
+                    <br>
+                    <p style="text-align: start; padding-left: 10px;">Read More</p>
+                </div>
+                <div class="content">
+                    <div class="dis">
+                        <h2>Jagannatha Gowda</h2>
+                        <p>Associate</p>
+
+                    </div>
+                    <div class="para">
+                        <h3>Academic qualification</h3><br>
+                        <h5>B.E, L.L.B, M.E (U.S.A), M.A, C.P.R, (M.B.A)</h5>
+                        <h3>Core focus areas</h3><br>
+                        <h5>Arbitration / Civil Cases/ Tribunal Cases</h5><br>
+                        <div class="icon-container">
+                            <a href="https://www.linkedin.com/in/jagannatha-gowda-78911952/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:jditsmyinbox@gmail.com"><i class="fa-solid
+                                        fa-square-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="team-member">
+                <img src="images/profile photos/Triveni.jpeg" class="image" alt="Not given">
+                <div class="personal">
+                    <h2 class="beforehover">Thriveni M</h2>
+                    <p class="beforehover">Associate</p>
+                    <br>
+                    <br>
+                    <p style="text-align: start; padding-left: 10px;">Read More</p>
+                </div>
+                <div class="content">
+                    <div class="dis">
+                        <h2>Thriveni M</h2>
+                        <p>Associate</p>
+
+                    </div>
+                    <div class="para">
+                        <h3>Academic qualification</h3><br>
+                        <h5>B.A, LLB, University Law College, Bangalore </h5>
+                        <h3>Core focus areas</h3><br>
+                        <h5>Procedural Laws-Civil & Criminal, Family Laws, Consumer Matters</h5><br>
+                        <div class="icon-container">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:netrabalikai1998@gmail.com"><i class="fa-solid
+                                        fa-square-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="images/profile photos/Hrishika Girijan.jpg" class="image" alt="Team Member 1">
+                <div class="personal">
+                    <h2 class="beforehover">Hrishika Girijan</h2>
+                    <p class="beforehover">Associate</p>
+                    <br>
+                    <br>
+                    <p style="text-align: start; padding-left: 10px;">Read More</p>
+                </div>
+                <div class="content">
+                    <div class="dis">
+                        <h2>Hrishika Girijan</h2>
+                        <p>Associate</p>
+
+                    </div>
+                    <div class="para">
+                        <h3>Academic qualification</h3><br>
+                        <h5>B.B.A, LLB(Hons.), Symbiosis Law School, Pune</h5>
+                        <h3>Core focus areas</h3><br>
+                        <h5>Commercial Matters, Arbitration, Procedural Laws- Civil & Criminal</h5><br>
+                        <div class="icon-container">
+                            <a href="https://www.linkedin.com/in/hrishika-girijan/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:hrishika@abchambers.com"><i class="fa-solid
+                                    fa-square-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="images/profile photos/Aishwarya V.R.jpeg " class="image" alt="Team Member 1">
+                <div class="personal">
+                    <h2 class="beforehover">Aishwarya VR</h2>
+                    <p class="beforehover">Associate</p>
+                    <br>
+                    <br>
+                    <p style="text-align: start; padding-left: 10px;">Read More</p>
+                </div>
+                <div class="content">
+                    <div class="dis">
+                        <h2>Aishwarya VR</h2>
+                        <p>Associate</p>
+
+                    </div>
+                    <div class="para">
+                        <h3>Academic qualification</h3><br>
+                        <h5>BBA LLB(Hons.), Alliance School of Law, Alliance University, Bengaluru</h5>
+                        <h3>Core focus areas</h3><br>
+                        <h5>Procedural Laws: Civil and Criminal, Matrimonial Disputes, Commercial Disputes, Consumer
+                            Disputes Resolution, Banking Laws</h5><br>
+                        <div class="icon-container">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:v.r.aishwarya@hotmail.com"><i class="fa-solid
+                                            fa-square-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p style="opacity: 0;">1</p>
+            <p style="opacity: 0;">1</p>
+            <p style="opacity: 0;">1</p>
+            <div class="team-member2">
+                <img src="images/profile photos/Dore Swamy.jpeg" class="image" alt="Team Member 1">
+                <div class="personal">
+                    <h2 class="beforehover">Dore swamy</h2>
+                    <p class="beforehover">Office staff</p>
+
+                </div>
+                <div class="content">
+                    <div class="dis">
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="team-member2">
+                <img src="images/profile photos/Sundar.jpeg" class="image" alt="Team Member 1">
+                <div class="personal">
+                    <h2 class="beforehover">Sundar</h2>
+                    <p class="beforehover">Office staff</p>
+
+                </div>
+                <div class="content">
+                    <div class="dis">
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="team-member2">
+                <img src="images/profile photos/Girish.jpeg" class="image" alt="Team Member 1">
+                <div class="personal">
+                    <h2 class="beforehover">⁠Girish</h2>
+                    <p class="beforehover">Office staff</p>
+
+                </div>
+                <div class="content">
+                    <div class="dis">
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <footer> <!-- FOOTER -->
+        <div class="footer-container">
+
+            <div class="bottom-bar">
+                &copy; 2020 AB Chambers. All rights reserved.
+            </div>
+    </footer>
+
+    <script src="script.js"></script> <!--JAVA SCRIPT LINK-->
+
+
+</body>
+
+</html>

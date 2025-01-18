@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* navbar */
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    width: 10rem;
+    background-color: #FBF9F1;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 75px;
+    background-color: #FBF9F1;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    font-size: 1.3rem;
+    height: 100%;
+    padding: 32.5px 15px;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    color: rgb(2, 19, 33);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.ABC_LOGO {
+    padding: 10px 10px;
+}
+
+.ABC_LOGO img {
+    height: 150%;
+    width: 90%;
+}
+
+.sidebar {
+    position: fixed;
+    /* top: 60px; */
+    right: 0;
+    height: 100vh;
+    width: 350px;
+    z-index: 999;
+    background-color: rgba(7, 102, 173, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+    overflow: scroll;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item {
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 30px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+}
+
+.hom {
+    font-size: 1.3rem;
+}
+
+.hideOnMobile a:hover {
+    color: #2f2e2e6d;
+}
+
+@media (max-width: 1400px) {
+    .hideOnMobile {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1401px) {
+    .hideOnPc {
+        display: none;
+    }
+}
+/*nav bar close*/
+
+
+/* contactus */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    font-size: 1.5rem;
+}
+
+.title h2::after {
+    content: " ";
+    height: 3px;
+    width: 120px;
+    background-color: #040326;
+    display: block;
+    margin: 10px auto;
+}
+
+h3::after {
+    content: " ";
+    height: 2px;
+    width: auto;
+    background-color: #040326;
+    display: block;
+    margin: 10px auto;
+}
+
+#carouselExample {
+    height: 70vh;
+
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 70vh;
+
+}
+
+.content-section {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    max-width: 100%;
+    color: #3E3232;
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #040326;
+}
+
+@media (max-width: 768px) {
+
+    /* Example for smaller screens */
+    .carousel-item img {
+        max-width: 100%;
+        /* Ensure images fill the width */
+    }
+
+    .contact-info {
+        font-size: 16px;
+        /* Adjust font size for readability */
+    }
+
+    .sidebar {
+        display: none;
+        /* Hide sidebar on smaller screens */
+    }
+}
+
+/* Footer */
+footer {
+    background: #021626;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+}
+
+.bottom-bar {
+    background: #021626;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px;
+    color: white;
+}
+
+.bottom-bar p {
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .footer-content {
+        width: 100%;
+    }
+}

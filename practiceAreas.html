@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICE AREAS</title>
+    <link rel="stylesheet" href="practiceAreas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <nav> <!-- NAVBAR FOR MOBILE-->
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a class="close" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30"
+                        width="30"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#fbf9f1"
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg></a></li>
+
+            <li><a class="item" href="index.html">Home</a></li>
+            <li><a class="item" href="gallery.html">Gallery</a></li>
+            <li><a class="item" href="about.html">About us</a></li>
+            <li><a class="item" href="index.html#vision">Mission & Vision</a></li>
+            <li><a class="item" href="our_people.html">Our Team</a></li>
+            <li><a class="item" href="practiceAreas.html">Practise Areas</a></li>
+            <li><a class="item" href="career.html">Careers</a></li>
+            <li><a class="item" href="contactus.html">Contact Us</a></li>
+            <li>
+            <div class="social">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" width="28"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#FBF9F1"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" width="28"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#FBF9F1"
+                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" width="28"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#FBF9F1"
+                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                    </svg></a>
+            </div>
+            </li>
+        </ul><!-- END of NAVBAR FOR MOBILE-->
+
+        <ul><!-- NAVBAR FOR DESKTOP-->
+            <li class="ABC_LOGO"><img src="images/AB_LOGO.jpeg"></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="#">About Us</a>
+                <ul class="dropdown">
+                    <li><a href="about.html">Our Firm</a></li>
+                    <li><a href="founder.html">Our Founder</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="index.html#vision">Mission & Vision</a></li>
+            <li class="hideOnMobile"><a href="our_people.html">Our Team</a></li>
+            <li class="hideOnMobile"><a href="practiceAreas.html">Practise Areas</a></li>
+            <li class="hideOnMobile"><a href="career.html"> Careers </a></li>
+            <li class="hideOnMobile"><a href="contactus.html">Contact Us</a></li>
+            <li class="hideOnPc" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        width="21"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#000000"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg></a></li>
+        </ul>
+    </nav> <!-- END of NAVBAR FOR DESKTOP-->
+
+    <div class="container">
+        <div class="service-wrapper">
+            <div class="service">
+                <h1 style="font-family:'Times New Roman', Times, serif;font-weight: lighter">PRACTICE AREAS</h1>
+                <div class="cards">
+                    <div class="card" onclick="showContent(1)">
+                        <i class="fa-regular fa-circle-right fa-2xs" id="arrow"></i>
+                        <i class="fa-solid fa-hammer"></i>
+                        <h2>Mining & Resources</h2>
+                    </div>
+
+                    <!-- content Mining & Resources-->
+                    <div class="content" id="content1">
+                        <span class="close-btn" onclick="closeContent(1)"><i class="fa-solid fa-x"
+                                style="color: #ffffff;"></i></span>
+                        <br>
+                        <h1 style="text-align: center;">Mining & Resources</h1>
+                        <br>
+                        AB Chambers specializes in Mining & Resources, navigating the complex legal landscape of
+                        extraction, exploration, and energy sectors. With extensive expertise in regulatory compliance,
+                        contract negotiation, and environmental law, we guide clients through the intricacies of
+                        resource development. Whether addressing permitting challenges or facilitating sustainable
+                        practices, our firm is dedicated to providing comprehensive legal solutions that empower
+                        businesses in the dynamic realm of mining and resources.
+                    </div>
+
+                    <div class="card" onclick="showContent(2)">
+                        <i class="fa-regular fa-circle-right fa-2xs" id="arrow"></i>
+                        <i class="fa-solid fa-coins"></i>
+                        <h2>Banking and Finance</h2>
+                    </div>
+
+                    <!-- content Banking and Finance-->
+                    <div class="content" id="content2">
+                        <span class="close-btn" onclick="closeContent(2)"><i class="fa-solid fa-x"
+                                style="color: #ffffff;"></i></span>
+                        <br>
+                        <h1 style="text-align: center;">Banking and Finance</h1>
+                        <br>
+                        AB chambers specializes in the dynamic and intricate field of Banking and Finance, providing
+                        comprehensive legal services tailored to meet the diverse needs of our clients in the financial
+                        sector. Our dedicated team of experienced advocates possesses an in-depth understanding of the
+                        ever-evolving landscape of banking and finance laws, regulations, and industry practices. We
+                        have catered to various big-giant NBFCs and banks including L&T Housing Finance Limited, TATA
+                        Capital, IIFL, Indian Overseas Bank, HDB Financial Services, etc.
+                    </div>
+
+                    <div class="card" onclick="showContent(3)">
+                        <i class="fa-regular fa-circle-right fa-2xs" id="arrow"></i>
+                        <i class="fa-solid fa-user-group" style="padding-bottom: 20px;"></i>
+                        <h2>Corporate and Commercial </h2>
+                    </div>
+
+                    <!-- content Corporate and Commercial-->
+                    <div class="content" id="content3">
+                        <span class="close-btn" onclick="closeContent(3)"><i class="fa-solid fa-x"
+                                style="color: #ffffff;"></i></span>
+                        <br>
+                        <h1 style="text-align: center;">Corporate and Commercial</h1>
+                        <br>
+                        "Specializing in Corporate and Commercial law, our law firm provides comprehensive legal
+                        solutions for businesses. From contract negotiations to mergers and acquisition to regulatory
+                        compliance, we offer expertise in navigating the complexities of corporate transactions. Our
+                        dedicated team is committed to safeguarding the interests of our clients and ensuring their
+                        success rest assured in the dynamic landscape of business and commerce."
+                    </div>
+                    <div class="card" onclick="showContent(4)">
+                        <i class="fa-regular fa-circle-right fa-2xs" id="arrow"></i>
+                        <i class="fa-solid fa-people-arrows"></i>
+                        <h2>Dispute Resolution</h2>
+                    </div>
+
+                    <!-- content Dispute Resolution-->
+                    <div class="content" id="content4">
+                        <span class="close-btn" onclick="closeContent(4)"><i class="fa-solid fa-x"
+                                style="color: #ffffff;"></i></span>
+                        <br>
+                        <h1 style="text-align: center;">Dispute Resolution</h1>
+                        <br>
+                        'Anuparna Bordoloi' who is the founder of 'AB chambers' is an esteemed member of Singapore
+                        Institute of Arbitrators (SiArb). AB Chambers is one the leading law firms in Dispute
+                        Resolution, offering wide reaching legal services to help clients navigate conflicts efficiently
+                        and effectively. Our experienced team of young-advocates is adept at resolving disputes through
+                        negotiation, mediation, and arbitration. Whether it involves commercial disputes, contract
+                        disagreements, or civil conflicts, we are committed to finding innovative and tailored solutions
+                        that align with our clients' objectives. With a focus on alternative dispute resolution methods,
+                        we aim to minimize the time, cost, and stress associated with legal conflicts while ensuring our
+                        clients' interests are safeguarded. At AB Chambers, we pride ourselves on delivering strategic
+                        and pragmatic legal counsel to achieve favorable outcomes for our clients in the complex
+                        landscape of dispute resolution.
+                    </div>
+
+                    <div class="card" onclick="showContent(5)">
+                        <i class="fa-regular fa-circle-right fa-2xs" id="arrow"></i>
+                        <i class="fa-solid fa-house"></i>
+                        <h2>Real Estate </h2>
+                    </div>
+                    <!-- content Real Estate -->
+                    <div class="content" id="content5">
+                        <span class="close-btn" onclick="closeContent(5)"><i class="fa-solid fa-x"
+                                style="color: #ffffff;"></i></span>
+                        <br>
+                        <h1 style="text-align: center;">Real Estate</h1>
+                        <br>
+                        AB Chambers in area Real Estate focuses on a wide range of legal matters related to property
+                        transactions, development, and ownership. Key areas of practice for a real estate law firm
+                        include property acquisitions and sales, lease agreements, land use and zoning issues, title
+                        examinations, and closings. We are dedicated to safeguarding their clients' interests and
+                        facilitating successful real estate transactions.
+                    </div>
+
+                    <div class="card" onclick="showContent(6)">
+                        <i class="fa-regular fa-circle-right fa-2xs" id="arrow"></i>
+                        <i class="fa-solid fa-building" style="padding-bottom: 20px;"></i>
+                        <h2>Corporate Insolvency & Restructuring</h2>
+                    </div>
+                    <!-- content  Corporate Insolvency & Restructuring-->
+                    <div class="content" id="content6">
+                        <span class="close-btn" onclick="closeContent(6)"><i class="fa-solid fa-x"
+                                style="color: #ffffff;"></i></span>
+                        <br>
+                        <h1 style="text-align: center;">Corporate Insolvency & Restructuring </h1>
+                        <br>
+                        We at AB Chambers understand the critical importance of preserving and maximizing value for
+                        stakeholders in distressed situations. Our firm takes a strategic and collaborative approach,
+                        tailoring solutions to meet the unique needs of each client. Whether representing creditors,
+                        debtors, or other interested parties, we leverage our expertise to negotiate favorable outcomes,
+                        implement effective restructuring plans, and ensure compliance with relevant laws and
+                        regulations. AB Chambers is committed to helping businesses emerge stronger from financial
+                        adversity. With a keen understanding of the intricate legal landscape surrounding corporate
+                        insolvency and restructuring, we provide proactive counsel aimed at minimizing risks and
+                        maximizing opportunities for our clients.
+
+                    </div>
+                    <div class="card" onclick="showContent(7)">
+                        <i class="fa-regular fa-circle-right fa-2xs" id="arrow"></i>
+                        <i class="fa-solid fa-object-group"></i>
+                        <h2>Mergers & Acquisitions</h2>
+                    </div>
+                    <!-- content Mergers & Acquisitions -->
+                    <div class="content" id="content7">
+                        <span class="close-btn" onclick="closeContent(7)"><i class="fa-solid fa-x"
+                                style="color: #ffffff;"></i></span>
+                        <br>
+                        <h1 style="text-align: center;">Mergers & Acquisitions</h1>
+                        <br>
+                        At AB chambers, From due diligence to negotiating terms, drafting agreements, and ensuring
+                        compliance with regulatory requirements, we are steadfast in guiding our clients through every
+                        phase of the M&A process. We strive towards guiding our clients through every phase of the M&A
+                        process. Our goal is to empower businesses with the legal insight and strategic advice necessary
+                        to navigate the ever-evolving landscape of mergers and acquisitions successfully.
+                    </div>
+
+
+                    <div class="card" onclick="showContent(8)">
+                        <i class="fa-regular fa-circle-right fa-2xs" id="arrow"></i>
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        <h2>Taxation</h2>
+                    </div>
+                    <!-- content Taxation -->
+                    <div class="content" id="content8">
+                        <span class="close-btn" onclick="closeContent(8)"><i class="fa-solid fa-x"
+                                style="color: #ffffff;"></i></span>
+                        <br>
+                        <h1 style="text-align: center;">Taxation</h1>
+                        <br>
+                        Given the ever-evolving nature of tax regulations and laws in India, we at AB chambers are upto
+                        to minute all the developments taking place in the field of taxation laws. To provide informed
+                        and effective advice to clients. Whether dealing with individual taxpayers or large
+                        corporations. Our team of experienced tax advocates possesses a deep understanding of both
+                        central and state tax laws, enabling us to navigate the complexities of the taxation field.
+                    </div>
+
+
+                    <div class="card" onclick="showContent(9)">
+                        <i class="fa-regular fa-circle-right fa-2xs" id="arrow"></i>
+                        <i class="fa-solid fa-r"></i>
+                        <h2>Regulatory Affairs </h2>
+                    </div>
+                    <!-- content Regulatory Affairs-->
+                    <div class="content" id="content9">
+                        <span class="close-btn" onclick="closeContent(9)"><i class="fa-solid fa-x"
+                                style="color: #ffffff;"></i></span>
+                        <br>
+                        <h1 style="text-align: center;">Regulatory Affairs</h1>
+                        <br>
+                    </div>
+
+                    <div class="card" onclick="showContent(10)">
+                        <i class="fa-regular fa-circle-right fa-2xs" id="arrow"></i>
+                        <i class="fa-solid fa-tower-broadcast" style="padding-bottom: 20px;"></i>
+                        <h2>Technology, Media & Telecommunication</h2>
+                    </div>
+                    <!-- content -->
+                    <div class="content" id="content10">
+                        <span class="close-btn" onclick="closeContent(10)"><i class="fa-solid fa-x"
+                                style="color: #ffffff;"></i></span>
+                        <br>
+                        <h1 style="text-align: center;">Technology, Media & Telecommunication</h1>
+                        <br>
+                        AB Chamber's expert team of advocates navigates the intricate intersection of law and technology
+                        to provide comprehensive legal solutions for clients operating in these innovative industries.
+                        In the realm of technology, we offer guidance on intellectual property, data protection,
+                        cybersecurity, and emerging technologies such as artificial intelligence and blockchain. In the
+                        media sector, our firm excels in matters related to content creation, licensing, and
+                        distribution, while our telecommunications practice covers regulatory compliance, spectrum
+                        allocation, and strategic partnerships.
+                    </div>
+
+                    <div class="card" onclick="showContent(11)">
+                        <i class="fa-regular fa-circle-right fa-2xs" id="arrow"></i>
+                        <i class="fa-solid fa-user-tie"></i>
+                        <h2>Consumer Resolution</h2>
+                    </div>
+
+                    <!-- content Consumer Resolution -->
+                    <div class="content" id="content11">
+                        <span class="close-btn" onclick="closeContent(11)"><i class="fa-solid fa-x"
+                                style="color: #ffffff;"></i></span>
+                        <br>
+                        <h1 style="text-align: center;">Consumer Resolution</h1>
+                        <br>
+                        AB Chambers as the dedicated to addressing legal matters that arise in the realm of consumer
+                        rights and protection. Our experienced team of attorneys is committed to assisting individuals
+                        facing challenges related to consumer transactions, ensuring fair treatment, and advocating for
+                        their rights. Whether it involves disputes with vendors, issues with product warranties, or
+                        concerns about unfair business practices, we are well-versed in navigating the complex landscape
+                        of consumer law. Our comprehensive approach involves advising clients on their rights,
+                        negotiating with opposing parties, and, if necessary, pursuing litigation to achieve a
+                        resolution, striving to empower and safeguard clients interest and rights.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer> <!-- FOOTER -->
+        <div class="footer-container">
+
+            <div class="bottom-bar">
+                &copy; 2020 AB Chambers. All rights reserved.
+            </div>
+
+
+    </footer>
+
+    <script src="script.js"></script> <!--JAVA SCRIPT LINK-->
+
+
+</body>
+
+</html>

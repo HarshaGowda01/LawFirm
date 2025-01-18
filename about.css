@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    width: 100%;
+    margin: auto;
+    height: 91.5vh;
+    padding-top: 60px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #0b4c66, #001f2b, #026c96, #00415a, #00719c);
+    background-size: 400% 400%;
+    animation: animate 8s ease infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.aboutus {
+    width: 100%;
+    height: 100%;
+}
+
+.title h1 {
+    color: #FBF9F1;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 42px;
+}
+
+.title h1::after {
+    content: " ";
+    height: 2.5px;
+    width: 120px;
+    background-color: #FBF9F1;
+    display: block;
+    margin: auto;
+}
+
+.services {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 75px auto;
+    text-align: center;
+}
+
+.card {
+    color: #FBF9F1;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    background-color: #164863;
+    border-radius: 2px;
+    cursor: pointer;
+    border: solid 1px #19A7CE;
+    border-top: solid 6px #19A7CE;
+    border-radius: 10px;
+    transition: all 0.8s;
+}
+
+.card:hover {
+    transform: scale(1.10);
+}
+
+.card .icon {
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 30px;
+    margin: 10px 0px 30px 0px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 30px 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@media screen and (max-width: 940px) {
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 85%;
+        display: flex;
+        margin: 20px 0px;
+    }
+}
+
+/* navbar */
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    width: 10rem;
+    background-color: #FBF9F1;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 75px;
+    background-color: #FBF9F1;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    font-size: 1.3rem;
+    height: 100%;
+    padding: 32.5px 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(2, 19, 33);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.ABC_LOGO {
+    padding: 10px 10px;
+}
+
+.ABC_LOGO img {
+    height: 150%;
+    width: 90%;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 350px;
+    z-index: 999;
+    background-color: rgba(7, 102, 173, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+    overflow: scroll;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    color: white;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item {
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 30px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+}
+
+.hom {
+    font-size: 1.3rem;
+}
+
+.hideOnMobile a:hover {
+    color: #2f2e2e6d;
+}
+
+@media (max-width: 1400px) {
+    .hideOnMobile {
+        display: none;
+    }
+}
+
+@media (max-width:580px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media (width > 1400px) {
+    .hideOnPc {
+        display: none;
+    }
+}
+
+/* End of the navbar */
+
+
+/* Footer */
+footer {
+    background: #021626;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* z-index: 1000; */
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+}
+
+.bottom-bar {
+    background: #021626;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px;
+    color: white;
+}
+
+.bottom-bar p {
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .footer-content {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+}
+
+/* END OF Footer */
